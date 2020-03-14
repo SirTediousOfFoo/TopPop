@@ -13,9 +13,16 @@
 		5242CA99241D4E0B00ECBF59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5242CA97241D4E0B00ECBF59 /* Main.storyboard */; };
 		5242CA9B241D4E0F00ECBF59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5242CA9A241D4E0F00ECBF59 /* Assets.xcassets */; };
 		5242CA9E241D4E0F00ECBF59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5242CA9C241D4E0F00ECBF59 /* LaunchScreen.storyboard */; };
+		5242CAA7241D58AE00ECBF59 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242CAA6241D58AE00ECBF59 /* Track.swift */; };
+		5242CAA9241D5AE000ECBF59 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242CAA8241D5AE000ECBF59 /* Artist.swift */; };
+		5242CAAB241D5B1500ECBF59 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242CAAA241D5B1500ECBF59 /* Album.swift */; };
+		529A507D241D66EE0063E588 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A507C241D66EE0063E588 /* APIRequestManager.swift */; };
+		71A0FA8D4E9993BAF98FA0FD /* libPods-TopPop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE442818D1A818E6B3D3EFA /* libPods-TopPop.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08F3401F33FD785A88765665 /* Pods-TopPop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopPop.debug.xcconfig"; path = "Target Support Files/Pods-TopPop/Pods-TopPop.debug.xcconfig"; sourceTree = "<group>"; };
+		1AB47596EB5BD72A5CD09B21 /* Pods-TopPop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopPop.release.xcconfig"; path = "Target Support Files/Pods-TopPop/Pods-TopPop.release.xcconfig"; sourceTree = "<group>"; };
 		5242CA8E241D4E0B00ECBF59 /* TopPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5242CA91241D4E0B00ECBF59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5242CA93241D4E0B00ECBF59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		5242CA9A241D4E0F00ECBF59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5242CA9D241D4E0F00ECBF59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5242CA9F241D4E0F00ECBF59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5242CAA6241D58AE00ECBF59 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		5242CAA8241D5AE000ECBF59 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		5242CAAA241D5B1500ECBF59 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		529A507C241D66EE0063E588 /* APIRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
+		EEE442818D1A818E6B3D3EFA /* libPods-TopPop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TopPop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71A0FA8D4E9993BAF98FA0FD /* libPods-TopPop.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30933D6941CD7CDF87AFEE45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEE442818D1A818E6B3D3EFA /* libPods-TopPop.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5242CA85241D4E0B00ECBF59 = {
 			isa = PBXGroup;
 			children = (
 				5242CA90241D4E0B00ECBF59 /* TopPop */,
 				5242CA8F241D4E0B00ECBF59 /* Products */,
+				C1358501F148FE7918AEAF23 /* Pods */,
+				30933D6941CD7CDF87AFEE45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +79,8 @@
 		5242CA90241D4E0B00ECBF59 /* TopPop */ = {
 			isa = PBXGroup;
 			children = (
+				5242CAAC241D5DDC00ECBF59 /* Modules */,
+				5242CAA5241D55C500ECBF59 /* Entities */,
 				5242CA91241D4E0B00ECBF59 /* AppDelegate.swift */,
 				5242CA93241D4E0B00ECBF59 /* SceneDelegate.swift */,
 				5242CA95241D4E0B00ECBF59 /* ViewController.swift */,
@@ -67,6 +92,33 @@
 			path = TopPop;
 			sourceTree = "<group>";
 		};
+		5242CAA5241D55C500ECBF59 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5242CAA6241D58AE00ECBF59 /* Track.swift */,
+				5242CAA8241D5AE000ECBF59 /* Artist.swift */,
+				5242CAAA241D5B1500ECBF59 /* Album.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5242CAAC241D5DDC00ECBF59 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				529A507C241D66EE0063E588 /* APIRequestManager.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C1358501F148FE7918AEAF23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08F3401F33FD785A88765665 /* Pods-TopPop.debug.xcconfig */,
+				1AB47596EB5BD72A5CD09B21 /* Pods-TopPop.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5242CAA2241D4E0F00ECBF59 /* Build configuration list for PBXNativeTarget "TopPop" */;
 			buildPhases = (
+				D8A891BD417E3E5AD2DCCE15 /* [CP] Check Pods Manifest.lock */,
 				5242CA8A241D4E0B00ECBF59 /* Sources */,
 				5242CA8B241D4E0B00ECBF59 /* Frameworks */,
 				5242CA8C241D4E0B00ECBF59 /* Resources */,
+				1B75CB6151EE4CF5832745CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,14 +187,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B75CB6151EE4CF5832745CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TopPop/Pods-TopPop-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TopPop/Pods-TopPop-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TopPop/Pods-TopPop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8A891BD417E3E5AD2DCCE15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TopPop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5242CA8A241D4E0B00ECBF59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5242CAA7241D58AE00ECBF59 /* Track.swift in Sources */,
 				5242CA96241D4E0B00ECBF59 /* ViewController.swift in Sources */,
 				5242CA92241D4E0B00ECBF59 /* AppDelegate.swift in Sources */,
+				529A507D241D66EE0063E588 /* APIRequestManager.swift in Sources */,
+				5242CAA9241D5AE000ECBF59 /* Artist.swift in Sources */,
 				5242CA94241D4E0B00ECBF59 /* SceneDelegate.swift in Sources */,
+				5242CAAB241D5B1500ECBF59 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +382,7 @@
 		};
 		5242CAA3241D4E0F00ECBF59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08F3401F33FD785A88765665 /* Pods-TopPop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +400,7 @@
 		};
 		5242CAA4241D4E0F00ECBF59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AB47596EB5BD72A5CD09B21 /* Pods-TopPop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
