@@ -17,7 +17,7 @@ DEPENDENCIES:
   - Kingfisher
   - PromiseKit/Alamofire
   - PromiseKit/CorePromise
-  - SVProgressHUD
+  - SVProgressHUD (~> 2.2)
 
 SPEC REPOS:
   trunk:
@@ -34,6 +34,6 @@ SPEC CHECKSUMS:
   PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 05a3a1bb913f4dc1d26abed31091a33c674f059a
+PODFILE CHECKSUM: 9d4c5651d767102a910507464b0e5f6c5336007d
 
 COCOAPODS: 1.9.1

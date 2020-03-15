@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6DCD254719A847861156413ED805D51B"
-               BuildableName = "libPods-TopPop.a"
+               BuildableName = "Pods_TopPop.framework"
                BlueprintName = "Pods-TopPop"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>
