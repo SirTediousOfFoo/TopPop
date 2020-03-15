@@ -6,7 +6,7 @@
 //
 // MARK: - Track
 
-struct Track: Codable, Equatable {
+struct Track: Codable {
     let id: Int
     let title, titleShort: String
     let titleVersion: TitleVersion
@@ -31,3 +31,24 @@ struct Track: Codable, Equatable {
         case preview, position, artist, album, type
     }
 }
+
+//MARK: - Comparison functions
+
+extension Track: Equatable {
+    
+    static func == (left: Track, right: Track) -> Bool {
+        return left.duration == right.duration
+    }
+}
+
+extension Track: Comparable {
+    
+    static func > (left: Track, right: Track) -> Bool {
+        return left.duration > right.duration
+    }
+    
+    static func < (left: Track, right: Track) -> Bool {
+        return left.duration < right.duration
+    }
+}
+

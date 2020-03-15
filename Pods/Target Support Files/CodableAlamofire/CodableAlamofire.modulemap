@@ -1,4 +1,4 @@
-module CodableAlamofire {
+framework module CodableAlamofire {
   umbrella header "CodableAlamofire-umbrella.h"
 
   export *
