@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		522D4010241E508A007589BE /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D400F241E508A007589BE /* Chart.swift */; };
+		522D4033241E8C1A007589BE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 522D4032241E8C1A007589BE /* Default-568h@2x.png */; };
 		5242CA92241D4E0B00ECBF59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242CA91241D4E0B00ECBF59 /* AppDelegate.swift */; };
 		5242CA94241D4E0B00ECBF59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242CA93241D4E0B00ECBF59 /* SceneDelegate.swift */; };
-		5242CA96241D4E0B00ECBF59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242CA95241D4E0B00ECBF59 /* ViewController.swift */; };
+		5242CA96241D4E0B00ECBF59 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242CA95241D4E0B00ECBF59 /* HomeViewController.swift */; };
 		5242CA99241D4E0B00ECBF59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5242CA97241D4E0B00ECBF59 /* Main.storyboard */; };
 		5242CA9B241D4E0F00ECBF59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5242CA9A241D4E0F00ECBF59 /* Assets.xcassets */; };
 		5242CA9E241D4E0F00ECBF59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5242CA9C241D4E0F00ECBF59 /* LaunchScreen.storyboard */; };
@@ -25,10 +26,11 @@
 		08F3401F33FD785A88765665 /* Pods-TopPop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopPop.debug.xcconfig"; path = "Target Support Files/Pods-TopPop/Pods-TopPop.debug.xcconfig"; sourceTree = "<group>"; };
 		1AB47596EB5BD72A5CD09B21 /* Pods-TopPop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopPop.release.xcconfig"; path = "Target Support Files/Pods-TopPop/Pods-TopPop.release.xcconfig"; sourceTree = "<group>"; };
 		522D400F241E508A007589BE /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		522D4032241E8C1A007589BE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5242CA8E241D4E0B00ECBF59 /* TopPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5242CA91241D4E0B00ECBF59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5242CA93241D4E0B00ECBF59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5242CA95241D4E0B00ECBF59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5242CA95241D4E0B00ECBF59 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5242CA98241D4E0B00ECBF59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5242CA9A241D4E0F00ECBF59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5242CA9D241D4E0F00ECBF59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,9 +62,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		522D4031241E8BE4007589BE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5242CA91241D4E0B00ECBF59 /* AppDelegate.swift */,
+				5242CA93241D4E0B00ECBF59 /* SceneDelegate.swift */,
+				5242CA9A241D4E0F00ECBF59 /* Assets.xcassets */,
+				5242CA9C241D4E0F00ECBF59 /* LaunchScreen.storyboard */,
+				5242CA9F241D4E0F00ECBF59 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		522D4034241E8C35007589BE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5242CA95241D4E0B00ECBF59 /* HomeViewController.swift */,
+				5242CA97241D4E0B00ECBF59 /* Main.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		5242CA85241D4E0B00ECBF59 = {
 			isa = PBXGroup;
 			children = (
+				522D4032241E8C1A007589BE /* Default-568h@2x.png */,
 				5242CA90241D4E0B00ECBF59 /* TopPop */,
 				5242CA8F241D4E0B00ECBF59 /* Products */,
 				C1358501F148FE7918AEAF23 /* Pods */,
@@ -81,15 +105,10 @@
 		5242CA90241D4E0B00ECBF59 /* TopPop */ = {
 			isa = PBXGroup;
 			children = (
-				5242CAAC241D5DDC00ECBF59 /* Modules */,
+				522D4031241E8BE4007589BE /* Resources */,
 				5242CAA5241D55C500ECBF59 /* Entities */,
-				5242CA91241D4E0B00ECBF59 /* AppDelegate.swift */,
-				5242CA93241D4E0B00ECBF59 /* SceneDelegate.swift */,
-				5242CA95241D4E0B00ECBF59 /* ViewController.swift */,
-				5242CA97241D4E0B00ECBF59 /* Main.storyboard */,
-				5242CA9A241D4E0F00ECBF59 /* Assets.xcassets */,
-				5242CA9C241D4E0F00ECBF59 /* LaunchScreen.storyboard */,
-				5242CA9F241D4E0F00ECBF59 /* Info.plist */,
+				5242CAAC241D5DDC00ECBF59 /* Modules */,
+				522D4034241E8C35007589BE /* Home */,
 			);
 			path = TopPop;
 			sourceTree = "<group>";
@@ -183,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5242CA9E241D4E0F00ECBF59 /* LaunchScreen.storyboard in Resources */,
+				522D4033241E8C1A007589BE /* Default-568h@2x.png in Resources */,
 				5242CA9B241D4E0F00ECBF59 /* Assets.xcassets in Resources */,
 				5242CA99241D4E0B00ECBF59 /* Main.storyboard in Resources */,
 			);
@@ -239,7 +259,7 @@
 			files = (
 				522D4010241E508A007589BE /* Chart.swift in Sources */,
 				5242CAA7241D58AE00ECBF59 /* Track.swift in Sources */,
-				5242CA96241D4E0B00ECBF59 /* ViewController.swift in Sources */,
+				5242CA96241D4E0B00ECBF59 /* HomeViewController.swift in Sources */,
 				5242CA92241D4E0B00ECBF59 /* AppDelegate.swift in Sources */,
 				529A507D241D66EE0063E588 /* APIRequestManager.swift in Sources */,
 				5242CAA9241D5AE000ECBF59 /* Artist.swift in Sources */,
@@ -390,7 +410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TopPop/Info.plist;
+				INFOPLIST_FILE = TopPop/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -408,7 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TopPop/Info.plist;
+				INFOPLIST_FILE = TopPop/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

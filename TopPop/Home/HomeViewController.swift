@@ -9,7 +9,7 @@
 import UIKit
 import PromiseKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     private var chart: Chart = []
     
