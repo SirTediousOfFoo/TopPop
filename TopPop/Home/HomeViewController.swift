@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
     //MARK: - Properties
     
     private var chart: Chart = []
-    
+   
     //MARK: - Outlets
     
     @IBOutlet private weak var tableView: UITableView!
@@ -39,7 +39,7 @@ class HomeViewController: UIViewController {
         
         menuViewWidth.constant = 0
         sortNormalButton.isSelected = true
-        
+       
         let refresher = UIRefreshControl()
         refresher.addTarget(self,
                             action: #selector(refreshWrapper),
