@@ -35,7 +35,7 @@ extension TrackCell {
         
         positionLabel.text = "\(item.position)"
         titleLabel.text = item.title
-        artistLabel.text = item.artist.name
+        artistLabel.text = "by: " + item.artist.name
         durationLabel.text = String(format: "%d:%02d", minutes, seconds)
     }
 }

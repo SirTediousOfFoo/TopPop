@@ -21,7 +21,6 @@
 		5242CAA9241D5AE000ECBF59 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242CAA8241D5AE000ECBF59 /* Artist.swift */; };
 		5242CAAB241D5B1500ECBF59 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242CAAA241D5B1500ECBF59 /* Album.swift */; };
 		529A507D241D66EE0063E588 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A507C241D66EE0063E588 /* APIRequestManager.swift */; };
-		52D4BA21241EBFE200BD54D2 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4BA20241EBFE200BD54D2 /* Time.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +41,6 @@
 		5242CAA8241D5AE000ECBF59 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		5242CAAA241D5B1500ECBF59 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		529A507C241D66EE0063E588 /* APIRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
-		52D4BA20241EBFE200BD54D2 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Time.swift; path = TopPop/Entities/Time.swift; sourceTree = SOURCE_ROOT; };
 		B246090CF7722D81864B92C9 /* Pods-TopPop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopPop.debug.xcconfig"; path = "Target Support Files/Pods-TopPop/Pods-TopPop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,7 +131,6 @@
 				5242CAA8241D5AE000ECBF59 /* Artist.swift */,
 				5242CAAA241D5B1500ECBF59 /* Album.swift */,
 				522D400F241E508A007589BE /* Chart.swift */,
-				52D4BA20241EBFE200BD54D2 /* Time.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -273,7 +270,6 @@
 			files = (
 				522D4010241E508A007589BE /* Chart.swift in Sources */,
 				5242CAA7241D58AE00ECBF59 /* Track.swift in Sources */,
-				52D4BA21241EBFE200BD54D2 /* Time.swift in Sources */,
 				522D4038241EB1E8007589BE /* TrackCell.swift in Sources */,
 				5242CA96241D4E0B00ECBF59 /* HomeViewController.swift in Sources */,
 				5242CA92241D4E0B00ECBF59 /* AppDelegate.swift in Sources */,

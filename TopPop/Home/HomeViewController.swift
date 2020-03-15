@@ -18,14 +18,28 @@ class HomeViewController: UIViewController {
     //MARK: - Outlets
     
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var menuViewWidth: NSLayoutConstraint!
+    
+    @IBOutlet private weak var menuButton: UIButton!
+    @IBOutlet weak var sortAscendingButton: UIButton!
+    @IBOutlet weak var sortNormalButton: UIButton!
+    @IBOutlet weak var sortDescendingButton: UIButton!
     
     //MARK: - Lifecycle functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        initialSetup()
         setupTableView()
         getData()
+    }
+    
+    func initialSetup(){
+        
+        menuViewWidth.constant = 0
+        sortNormalButton.isSelected = true
+        
         let refresher = UIRefreshControl()
         refresher.addTarget(self,
                             action: #selector(refreshWrapper),
@@ -33,9 +47,68 @@ class HomeViewController: UIViewController {
         tableView.refreshControl = refresher
     }
     
+    //MARK: - objc functions
+    
     @objc private func refreshWrapper() {
-           getData()
+            getData()
+            sortNormalButton.isSelected = true
+            sortDescendingButton.isSelected = false
+            sortAscendingButton.isSelected = false
        }
+    
+    //MARK: - Menu functions
+    
+    @IBAction func menuButtonSelected(_ sender: Any) {
+        if !menuButton.isSelected {
+            menuViewWidth.constant = 180
+            UIView.animate(withDuration: 0.5) {
+                self.view.layoutIfNeeded()
+            }
+            menuButton.isSelected = true
+            tableView.isUserInteractionEnabled.toggle()
+        }
+        else {
+            menuViewWidth.constant = 0
+            UIView.animate(withDuration: 0.5) {
+                self.view.layoutIfNeeded()
+            }
+            menuButton.isSelected = false
+            tableView.isUserInteractionEnabled.toggle()
+        }
+    }
+    
+    @IBAction func ascSortSelected(_ sender: Any) {
+        if !sortAscendingButton.isSelected {
+            sortAscendingButton.isSelected = true
+            sortNormalButton.isSelected = false
+            sortDescendingButton.isSelected = false
+            
+            chart.sort()
+            tableView.reloadData()
+        }
+    }
+    
+    @IBAction func normalSortSelected(_ sender: Any) {
+        if !sortNormalButton.isSelected {
+            sortNormalButton.isSelected = true
+            sortDescendingButton.isSelected = false
+            sortAscendingButton.isSelected = false
+            
+            chart.sort(by: { $0.position < $1.position })
+            tableView.reloadData()
+        }
+    }
+    
+    @IBAction func descSortSelected(_ sender: Any) {
+        if !sortDescendingButton.isSelected {
+            sortDescendingButton.isSelected = true
+            sortAscendingButton.isSelected = false
+            sortNormalButton.isSelected = false
+            
+            chart.sort(by: { $0.duration > $1.duration })
+            tableView.reloadData()
+        }
+    }
     
     //MARK: - Data fetching
     

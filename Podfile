@@ -7,7 +7,6 @@ target 'TopPop' do
 
   # Pods for TopPop
   pod "SVProgressHUD", "~> 2.2"
-
   pod "Alamofire"
   pod "CodableAlamofire"
 
