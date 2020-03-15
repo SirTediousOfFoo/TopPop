@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		522D4010241E508A007589BE /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D400F241E508A007589BE /* Chart.swift */; };
 		522D4033241E8C1A007589BE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 522D4032241E8C1A007589BE /* Default-568h@2x.png */; };
+		522D4038241EB1E8007589BE /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D4037241EB1E8007589BE /* TrackCell.swift */; };
 		5242CA92241D4E0B00ECBF59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242CA91241D4E0B00ECBF59 /* AppDelegate.swift */; };
 		5242CA94241D4E0B00ECBF59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242CA93241D4E0B00ECBF59 /* SceneDelegate.swift */; };
 		5242CA96241D4E0B00ECBF59 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242CA95241D4E0B00ECBF59 /* HomeViewController.swift */; };
@@ -27,6 +28,7 @@
 		1AB47596EB5BD72A5CD09B21 /* Pods-TopPop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopPop.release.xcconfig"; path = "Target Support Files/Pods-TopPop/Pods-TopPop.release.xcconfig"; sourceTree = "<group>"; };
 		522D400F241E508A007589BE /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 		522D4032241E8C1A007589BE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		522D4037241EB1E8007589BE /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		5242CA8E241D4E0B00ECBF59 /* TopPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5242CA91241D4E0B00ECBF59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5242CA93241D4E0B00ECBF59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,10 +79,19 @@
 		522D4034241E8C35007589BE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				522D4036241EB1B5007589BE /* Cells */,
 				5242CA95241D4E0B00ECBF59 /* HomeViewController.swift */,
 				5242CA97241D4E0B00ECBF59 /* Main.storyboard */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		522D4036241EB1B5007589BE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				522D4037241EB1E8007589BE /* TrackCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		5242CA85241D4E0B00ECBF59 = {
@@ -259,6 +270,7 @@
 			files = (
 				522D4010241E508A007589BE /* Chart.swift in Sources */,
 				5242CAA7241D58AE00ECBF59 /* Track.swift in Sources */,
+				522D4038241EB1E8007589BE /* TrackCell.swift in Sources */,
 				5242CA96241D4E0B00ECBF59 /* HomeViewController.swift in Sources */,
 				5242CA92241D4E0B00ECBF59 /* AppDelegate.swift in Sources */,
 				529A507D241D66EE0063E588 /* APIRequestManager.swift in Sources */,
