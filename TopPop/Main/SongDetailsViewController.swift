@@ -15,7 +15,6 @@ final class SongDetailsViewController: UIViewController {
     //MARK: - Properties
     
     var track: Track? = nil
-    private var tracklist: [Track] = []
     
     //MARK: - Outlets
     
@@ -34,29 +33,12 @@ final class SongDetailsViewController: UIViewController {
         getData()
     }
     
+    //MARK: - UI setup functions
+    
     private func initialSetup() {
         songTitleLabel.text = track!.title
         albumLabel.text = track!.album.title
         artistLabel.text = track!.artist.name
-    }
-    
-    private func getData(){
-        let albumArtURL = URL(string: track!.album.coverMedium)
-        let tracklistURL = track!.album.tracklist
-        
-        albumArt.kf.setImage(with: albumArtURL)
-        print(tracklistURL)
-        
-        firstly{
-            APIManager.request(
-                Tracklist.self,
-                path: tracklistURL,
-                keyPath: "data")
-        }.done{ [weak self] tracklist in
-            self?.setTracklist(with: tracklist)
-        }.catch{ error in
-            print(error.localizedDescription)
-        }
     }
     
     private func setTracklist(with tracklist: Tracklist) {
@@ -72,4 +54,26 @@ final class SongDetailsViewController: UIViewController {
             tracklistLabel.text = "This album is a single"
         }
     }
+    
+    //MARK: - Data fetching
+    
+    private func getData(){
+        let albumArtURL = URL(string: track!.album.coverMedium)
+        let tracklistURL = track!.album.tracklist
+        
+        albumArt.kf.setImage(with: albumArtURL)
+        
+        firstly{
+            APIManager.request(
+                Tracklist.self,
+                path: tracklistURL,
+                keyPath: "data")
+        }.done{ [weak self] tracklist in
+            self?.setTracklist(with: tracklist)
+        }.catch{ error in
+            print(error.localizedDescription)
+        }
+    }
+    
+    
 }
