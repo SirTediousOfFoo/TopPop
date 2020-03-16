@@ -110,6 +110,16 @@ class HomeViewController: UIViewController {
         }
     }
     
+    //MARK: - Navigation
+    
+    func navigateToAlbum(selectedTrack track: Track) {
+        
+        let albumViewController = storyboard?.instantiateViewController(identifier: "AlbumViewController") as! SongDetailsViewController
+        albumViewController.track = track
+
+        self.present(albumViewController, animated: true)
+    }
+    
     //MARK: - Data fetching
     
     private func getData(){
@@ -158,7 +168,7 @@ extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let item = chart[indexPath.row]
-       //TODO: - Navigate next
+        navigateToAlbum(selectedTrack: item)
     }
 }
 

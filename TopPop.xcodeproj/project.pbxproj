@@ -21,6 +21,7 @@
 		5242CAA9241D5AE000ECBF59 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242CAA8241D5AE000ECBF59 /* Artist.swift */; };
 		5242CAAB241D5B1500ECBF59 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242CAAA241D5B1500ECBF59 /* Album.swift */; };
 		529A507D241D66EE0063E588 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A507C241D66EE0063E588 /* APIRequestManager.swift */; };
+		52E15720241FE45D00C6F526 /* SongDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1571F241FE45D00C6F526 /* SongDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		5242CAA8241D5AE000ECBF59 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		5242CAAA241D5B1500ECBF59 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		529A507C241D66EE0063E588 /* APIRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
+		52E1571F241FE45D00C6F526 /* SongDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailsViewController.swift; sourceTree = "<group>"; };
 		B246090CF7722D81864B92C9 /* Pods-TopPop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopPop.debug.xcconfig"; path = "Target Support Files/Pods-TopPop/Pods-TopPop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,14 +78,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		522D4034241E8C35007589BE /* Home */ = {
+		522D4034241E8C35007589BE /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				522D4036241EB1B5007589BE /* Cells */,
 				5242CA95241D4E0B00ECBF59 /* HomeViewController.swift */,
 				5242CA97241D4E0B00ECBF59 /* Main.storyboard */,
+				52E1571F241FE45D00C6F526 /* SongDetailsViewController.swift */,
 			);
-			path = Home;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		522D4036241EB1B5007589BE /* Cells */ = {
@@ -119,7 +122,7 @@
 				522D4031241E8BE4007589BE /* Resources */,
 				5242CAA5241D55C500ECBF59 /* Entities */,
 				5242CAAC241D5DDC00ECBF59 /* Modules */,
-				522D4034241E8C35007589BE /* Home */,
+				522D4034241E8C35007589BE /* Main */,
 			);
 			path = TopPop;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				5242CA96241D4E0B00ECBF59 /* HomeViewController.swift in Sources */,
 				5242CA92241D4E0B00ECBF59 /* AppDelegate.swift in Sources */,
 				529A507D241D66EE0063E588 /* APIRequestManager.swift in Sources */,
+				52E15720241FE45D00C6F526 /* SongDetailsViewController.swift in Sources */,
 				5242CAA9241D5AE000ECBF59 /* Artist.swift in Sources */,
 				5242CA94241D4E0B00ECBF59 /* SceneDelegate.swift in Sources */,
 				5242CAAB241D5B1500ECBF59 /* Album.swift in Sources */,
