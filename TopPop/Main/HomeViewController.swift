@@ -64,7 +64,7 @@ class HomeViewController: UIViewController {
             UIView.animate(withDuration: 0.5) {
                 self.view.layoutIfNeeded()
             }
-            menuButton.isSelected = true
+            menuButton.isSelected.toggle()
             tableView.isUserInteractionEnabled.toggle()
         }
         else {
@@ -72,7 +72,7 @@ class HomeViewController: UIViewController {
             UIView.animate(withDuration: 0.5) {
                 self.view.layoutIfNeeded()
             }
-            menuButton.isSelected = false
+            menuButton.isSelected.toggle()
             tableView.isUserInteractionEnabled.toggle()
         }
     }
@@ -114,7 +114,7 @@ class HomeViewController: UIViewController {
     
     func navigateToAlbum(selectedTrack track: Track) {
         
-        let albumViewController = storyboard?.instantiateViewController(identifier: "AlbumViewController") as! SongDetailsViewController
+        let albumViewController = storyboard?.instantiateViewController(withIdentifier: "AlbumViewController") as! SongDetailsViewController
         albumViewController.track = track
 
         self.present(albumViewController, animated: true)
