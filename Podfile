@@ -3,9 +3,10 @@
 
 target 'TopPop' do
   # Comment the next line if you don't want to use dynamic frameworks
-  #use_frameworks!
+  use_frameworks!
 
   # Pods for TopPop
+  pod "SVProgressHUD", "~> 2.2"
   pod "Alamofire"
   pod "CodableAlamofire"
 
@@ -13,6 +14,5 @@ target 'TopPop' do
   pod "PromiseKit/Alamofire"
   pod "Kingfisher"
 
-  pod "SVProgressHUD"
   
 end

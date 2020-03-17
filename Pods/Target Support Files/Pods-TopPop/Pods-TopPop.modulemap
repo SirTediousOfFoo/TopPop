@@ -1,4 +1,4 @@
-module Pods_TopPop {
+framework module Pods_TopPop {
   umbrella header "Pods-TopPop-umbrella.h"
 
   export *
