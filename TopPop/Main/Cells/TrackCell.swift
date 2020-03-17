@@ -11,11 +11,13 @@ import UIKit
 class TrackCell: UITableViewCell {
     
     //MARK: - Outlets
+    
     @IBOutlet weak var positionLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var durationLabel: UILabel!
     
+    //MARK: - Reuse
     
     override func prepareForReuse() {
            super.prepareForReuse()
@@ -26,7 +28,8 @@ class TrackCell: UITableViewCell {
     }
 }
 
-//MARK: - Configure
+//MARK: - Configure cell
+
 extension TrackCell {
     func configure(with item: Track) {
         
